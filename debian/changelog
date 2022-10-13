@@ -1,0 +1,66 @@
+node-d3-dispatch (1.0.6-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Apply multi-arch hints. + node-d3-dispatch: Add Multi-Arch: foreign.
+
+  [ Pirate Praveen ]
+  * Use node-rollup-plugin-terser (now available in the archive)
+  * Bump Standards-Version to 4.5.1 (no changes needed)
+  * Enable nocheck build profile
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 15 Dec 2020 14:32:29 +0530
+
+node-d3-dispatch (1.0.6-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 1.0.6
+  * Bump Standards-Version to 4.4.1 (no changes needed)
+  * Drop compat file, rely on debhelper-compat and bump compat level to 12
+  * Removed debian/install; not required
+  * Fixed format URL in debian/copyright
+  * Added upstream/metadata
+  * Added debian/gbp.conf
+  * Added Rules-Require-Root in debian/control
+  * Fix package wrt cme
+  * Run wrap-and-sort
+
+ -- Abhijith Sheheer <abhijithsheheer@gmail.com>  Fri, 20 Dec 2019 23:32:01 +0530
+
+node-d3-dispatch (1.0.5-2) unstable; urgency=medium
+
+  * Reupload to unstable
+  * Make build reproducible
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 07 Jul 2019 15:08:45 +0530
+
+node-d3-dispatch (1.0.5-1) experimental; urgency=medium
+
+  * New upstream version 1.0.5
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Use salsa.debian.org in Vcs-* fields
+  * Use rollup.config.js, install ES module
+  * Switch to pkg-js-tools for tests
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 19 Jun 2019 15:02:41 +0530
+
+node-d3-dispatch (1.0.3-3) unstable; urgency=medium
+
+  * Build using rollup (webpack was used before rollup was available in main)
+  * Bump debhelper compat to 11
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 01 Mar 2018 12:10:32 +0530
+
+node-d3-dispatch (1.0.3-2) unstable; urgency=medium
+
+  * Use webpack to build umd module like upstream
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 06 Jan 2018 11:32:03 +0530
+
+node-d3-dispatch (1.0.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #877520)
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 02 Oct 2017 19:55:24 +0530
