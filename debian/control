@@ -3,22 +3,23 @@ Section: javascript
 Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Pirate Praveen <praveen@debian.org>
-Build-Depends: debhelper-compat (= 12),
-               node-tape <!nocheck>,
-               nodejs,
-               pkg-js-tools,
-               rollup,
-               node-rollup-plugin-terser
-Standards-Version: 4.5.1
-Homepage: https://d3js.org/d3-dispatch/
-Vcs-Git: https://salsa.debian.org/js-team/node-d3-dispatch.git
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-rollup-plugin-terser
+ , node-tape <!nocheck>
+ , nodejs
+ , rollup
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/js-team/node-d3-dispatch
+Vcs-Git: https://salsa.debian.org/js-team/node-d3-dispatch.git
+Homepage: https://d3js.org/d3-dispatch/
 Testsuite: autopkgtest-pkg-nodejs
 Rules-Requires-Root: no
 
 Package: node-d3-dispatch
 Architecture: all
-Depends: nodejs, ${misc:Depends}
+Depends: ${misc:Depends}
+Provides: ${nodejs:Provides}
 Multi-Arch: foreign
 Description: Register named callbacks and call them with arguments
  Dispatching is a convenient mechanism for separating concerns with
