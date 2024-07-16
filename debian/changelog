@@ -1,3 +1,39 @@
+node-d3-dispatch (1.0.6+~1.0.9-1) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.2, no changes needed.
+  * Embed typescript declarations and repack
+
+ -- Yadd <yadd@debian.org>  Sat, 09 Sep 2023 17:16:07 +0400
+
+node-d3-dispatch (1.0.6-4) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Update standards version to 4.6.1, no changes needed.
+
+  [ Yadd ]
+  * Modernize debian/watch
+  * Fix filenamemangle
+  * Fix GitHub tags regex
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+  * Add fix for rollup 3 (Closes: #1022597)
+
+ -- Yadd <yadd@debian.org>  Wed, 26 Oct 2022 08:46:15 +0200
+
+node-d3-dispatch (1.0.6-3) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+
+  [ Paul Gevers ]
+  * Drop dependency on nodejs (Closes: #1009949)
+
+ -- Paul Gevers <elbrus@debian.org>  Sat, 28 May 2022 20:39:18 +0200
+
 node-d3-dispatch (1.0.6-2) unstable; urgency=medium
 
   [ Debian Janitor ]
